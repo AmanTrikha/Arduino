@@ -1,0 +1,85 @@
+int a = 2;  //For displaying segment "a"
+int b = 3;  //For displaying segment "b"
+int c = 4;  //For displaying segment "c"
+int d = 5;  //For displaying segment "d"
+int e = 6;  //For displaying segment "e"
+int f = 8;  //For displaying segment "f"
+int g = 9;  //For displaying segment "g"
+void setup() {               
+  pinMode(a, OUTPUT);  //A
+  pinMode(b, OUTPUT);  //B
+  pinMode(c, OUTPUT);  //C
+  pinMode(d, OUTPUT);  //D
+  pinMode(e, OUTPUT);  //E
+  pinMode(f, OUTPUT);  //F
+  pinMode(g, OUTPUT);  //G
+}
+
+void turnon()
+{
+  digitalWrite(a,LOW);
+  digitalWrite(b,LOW);
+  digitalWrite(c,LOW);
+  digitalWrite(d,LOW);
+  digitalWrite(e,LOW);
+  digitalWrite(f,LOW);
+  digitalWrite(g,LOW);
+}
+
+void turnoff()
+{
+  digitalWrite(a,HIGH);
+  digitalWrite(b,HIGH);
+  digitalWrite(c,HIGH);
+  digitalWrite(d,HIGH);
+  digitalWrite(e,HIGH);
+  digitalWrite(f,HIGH);
+  digitalWrite(g,HIGH);
+}
+
+
+void loop ()
+{
+ 
+  {
+  turnon();
+  digitalWrite(b,HIGH);
+  delay(2000);
+  
+    turnoff();
+    digitalWrite(g,LOW);
+    digitalWrite(c,LOW);
+    delay(2000);
+    turnon();
+    digitalWrite(a,HIGH);
+    digitalWrite(c,HIGH);
+    delay(2000);
+     turnon();
+    digitalWrite(a,HIGH);
+    digitalWrite(e,HIGH);
+    delay(2000);
+      turnon();
+    digitalWrite(f,HIGH);
+    digitalWrite(e,HIGH);
+    digitalWrite(d,HIGH);
+    delay(2000);
+    turnon();
+    digitalWrite(g,HIGH);
+    digitalWrite(e,HIGH);
+    delay(2000);
+      turnon();
+    digitalWrite(g,HIGH);
+    delay(2000);
+    turnoff();
+    digitalWrite(f,LOW);
+    digitalWrite(g,LOW);
+    digitalWrite(c,LOW);
+    delay(2000);
+    turnon();
+    delay(2000);
+    turnon();
+    digitalWrite(e,HIGH);
+    delay(2000);
+  }
+    
+  }
